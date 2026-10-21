@@ -1,0 +1,69 @@
+name: Bug report
+description: Something in the Rookie doesn't work as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. This repository is public, so **don't paste tokens, passwords, API keys, or personal information**.
+        For security issues, email info@rollingmango.co.kr instead (see SECURITY.md).
+  - type: input
+    id: version
+    attributes:
+      label: CLI version
+      description: Output of `rookie --version`
+      placeholder: "0.5.2"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: OS
+      options:
+        - macOS
+        - Linux
+        - Windows
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: tool
+    attributes:
+      label: AI tool
+      multiple: true
+      options:
+        - Claude Code
+        - Codex CLI
+        - ChatGPT
+        - Claude desktop
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Run `rookie login`
+        2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected and what happened
+    validations:
+      required: true
+  - type: textarea
+    id: doctor
+    attributes:
+      label: "`rookie doctor` output"
+      description: |
+        Run `rookie doctor` and paste the output. It doesn't print your token, but it does show your machine name, folder paths, and a partly hidden email address.
+        Read it before posting, and replace anything you don't want public with `[removed]`.
+      render: text
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Screenshots or error messages. Check them for private information first.

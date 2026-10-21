@@ -1,0 +1,35 @@
+name: Feature request
+description: Suggest something the Rookie should do
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: Tell us what you were trying to do. A real situation helps more than a feature name.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What were you trying to do?
+      description: What did you have to repeat, work around, or do by hand?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+    validations:
+      required: true
+  - type: dropdown
+    id: tool
+    attributes:
+      label: AI tool
+      multiple: true
+      options:
+        - Claude Code
+        - Codex CLI
+        - ChatGPT
+        - Claude desktop
+        - Other
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
