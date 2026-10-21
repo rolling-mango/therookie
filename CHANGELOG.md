@@ -2,6 +2,10 @@
 
 User-facing changes to the `therookie` CLI. Dates are npm publish dates (UTC).
 
+## 0.5.3 — 2026-10-21
+
+- The npm page now links to this repository and its issue tracker. Nothing works differently.
+
 ## 0.5.2 — 2026-10-21
 
 - The license changed from MIT to a license to use with The Rookie service. See LICENSE in the npm package. 0.5.1 and earlier stay under MIT.
