@@ -12,7 +12,7 @@ body:
     attributes:
       label: CLI version
       description: Output of `rookie --version`
-      placeholder: "0.5.3"
+      placeholder: "0.5.4"
     validations:
       required: true
   - type: dropdown

@@ -2,6 +2,11 @@
 
 User-facing changes to the `therookie` CLI. Dates are npm publish dates (UTC).
 
+## 0.5.4 — 2026-10-21
+
+- The Skill now saves a decision or a confirmed result to memory in the same turn it happens.
+- It also explains how to close an item that was waiting on the same topic.
+
 ## 0.5.3 — 2026-10-21
 
 - The npm page now links to this repository and its issue tracker. Nothing works differently.
